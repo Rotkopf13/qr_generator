@@ -1,0 +1,49 @@
+/* small devices */
+@media only screen and (max-width: 600px) {
+.container{
+  display: flex;
+  justify-content: center;
+ }
+.content{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.input-group{
+  position: relative;
+}
+.input{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font: inherit;
+  background-color: transparent;
+  outline: 2px solid rgb(44, 44, 44);
+}
+.input-label{
+  position:absolute;
+  color:rgb(59, 59, 59);
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  transition: transform .25s;
+}
+.input:focus+.input-label,
+.input:valid+.input-label{
+  transform: translate(10px, -14px) scale(.8);
+  color:#d1c5fc;
+  padding-inline: 5px;
+  background-color: #242329;
+}
+#qr-image{
+  visibility: hidden;
+}
+}
+/* tablets and large phones */
+@media only screen and (min-width: 600px) {...} 
+/* landscape tablest */
+@media only screen and (min-width: 768px) {...} 
+/* laptops and desktops */
+@media only screen and (min-width: 992px) {...} 
+/* extra large devices */
+@media only screen and (min-width: 1200px) {...}
